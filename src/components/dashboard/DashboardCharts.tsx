@@ -1,10 +1,9 @@
-import React from 'react';
 import { 
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend
 } from 'recharts';
 import { useFinance } from '../../context/FinanceContext';
-import { format, parseISO, startOfMonth, endOfMonth, eachDayOfInterval } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 
 const DashboardCharts = () => {
   const { transactions } = useFinance();
@@ -143,7 +142,7 @@ const DashboardCharts = () => {
                 dataKey="value"
                 animationDuration={1500}
               >
-                {categoryData.map((entry, index) => (
+                {categoryData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>

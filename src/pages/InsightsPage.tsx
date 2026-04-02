@@ -1,11 +1,7 @@
-import React from 'react';
 import { useFinance } from '../context/FinanceContext';
 import { 
   PieChart, 
   TrendingUp, 
-  TrendingDown, 
-  ArrowUpRight, 
-  ArrowDownRight,
   Target,
   Zap,
   ShieldCheck,
@@ -13,8 +9,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
-  LineChart, Line
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell
 } from 'recharts';
 
 const InsightsPage = () => {
@@ -91,7 +86,7 @@ const InsightsPage = () => {
                 />
                 <Tooltip 
                   cursor={{ fill: '#f8fafc' }}
-                  formatter={(value: number) => `₹${value.toLocaleString('en-IN')}`}
+                  formatter={(value: any) => `₹${Number(value).toLocaleString('en-IN')}`}
                   contentStyle={{ 
                     backgroundColor: '#fff', 
                     borderRadius: '12px', 

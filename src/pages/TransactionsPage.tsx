@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import TransactionTable from '../components/transactions/TransactionTable';
 import AddTransactionModal from '../components/transactions/AddTransactionModal';
 import { useFinance } from '../context/FinanceContext';
-import { Plus, Download, Filter, FileText } from 'lucide-react';
+import { Plus, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const TransactionsPage = () => {

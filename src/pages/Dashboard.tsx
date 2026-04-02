@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SummaryCards from '../components/dashboard/SummaryCards';
 import DashboardCharts from '../components/dashboard/DashboardCharts';
 import TransactionTable from '../components/transactions/TransactionTable';

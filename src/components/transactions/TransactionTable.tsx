@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useFinance } from '../../context/FinanceContext';
 import { 
   ArrowUpRight, 
   ArrowDownRight, 
   Search, 
-  Filter, 
-  MoreHorizontal, 
   Trash2, 
   Edit,
-  Download,
-  Plus
+  Download
 } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { motion, AnimatePresence } from 'framer-motion';

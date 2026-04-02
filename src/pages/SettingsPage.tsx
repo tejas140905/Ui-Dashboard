@@ -1,5 +1,4 @@
-import React from 'react';
-import { Settings, User, Bell, Lock, Globe, Palette, Moon } from 'lucide-react';
+import { Settings, User, Bell, Lock, Globe, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const SettingsPage = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFinance } from '../../context/FinanceContext';
 import { TrendingUp, TrendingDown, Wallet, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 import { motion } from 'framer-motion';

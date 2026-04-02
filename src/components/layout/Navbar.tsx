@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFinance } from '../../context/FinanceContext';
 import { Bell, Search, User, ChevronDown } from 'lucide-react';
 
